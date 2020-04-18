@@ -1,0 +1,185 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-image: linear-gradient(120deg, #FCCF31, #F55555);
+	font-family: "Poppins", sans-serif;
+	min-height: 100vh;
+	color: white;
+}
+
+header {
+	font-size: 1.5rem;
+}
+
+header,
+form {
+	min-height: 12vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+form input,
+form button {
+	padding: 0.5rem;
+	font-size: 2rem;
+	border: none;
+	background-color: #fff;
+	outline: none;
+}
+
+form button {
+	color: #F55555;
+	background-color: #fff;
+	cursor: pointer;
+	transition: all .3s ease;
+}
+
+form button:hover {
+	background: #F55555;
+	color: white;
+}
+
+.todo-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.todo-list {
+	min-width: 40%;
+	list-style: none;
+}
+
+.todo {
+	margin: .5rem;
+	background: #fff;
+	color: #F55555;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: all .5s ease;
+}
+
+.todo li {
+	flex: 1;
+}
+
+.trash-btn,
+.complete-btn {
+	background: rgba(182, 63, 63);
+	color: #fff;
+	border: none;
+	padding: 1rem;
+	cursor: pointer;
+	font-size: 1rem;
+}
+
+.complete-btn {
+	background-color: rgb(66, 185, 66);
+}
+
+.todo-item {
+	padding: 0rem .5rem;
+}
+
+.fa-trash,
+.fa-check {
+	pointer-events: none;
+}
+
+.completed {
+	text-decoration: line-through;
+	opacity: .5;
+}
+
+.fall {
+	transform: translateY(8rem);
+	opacity: 0;
+	z-index: 100;
+}
+
+.todo-input {
+	cursor: pointer;
+	background: rgba(255, 255, 255, 0.65);
+	transition: ease .5s background;
+}
+
+.todo-input:focus {
+	background: #ffffff;
+}
+
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	outline: none;
+	border: none;
+}
+
+.select {
+	margin: 1rem;
+	position: relative;
+	overflow: hidden;
+}
+
+select {
+	color: #F55555;
+	width: 10rem;
+	cursor: pointer;
+	padding: 1rem;
+}
+
+.select::after {
+	content: "\25BC";
+	position: absolute;
+	background: #F55555;
+	top: 0;
+	right: 0;
+	padding: .8rem;
+	pointer-events: none;
+	transition: all .3s ease;
+}
+
+.select:hover::after {
+	background: #fff;
+	color: #F55555;
+}
+
+input {
+	color: #F55555;
+}
+
+.current-time {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+h1 {
+	cursor: pointer;
+	font-size: 10rem;
+}
+
+.current-time {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	list-style: none;
+	text-transform: uppercase;
+	flex-direction: column;
+}
+
+.current-day {
+	font-size: 4rem;
+	margin-right: 15px;
+	letter-spacing: 10px;
+}
+
+.time-wrapper {
+	font-size: 6rem;
+}
